@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int n,i,arr[],k,ind=0;
+	    Scanner input=new Scanner(System.in);
+	    n=input.nextInt();
+	    arr=new int[n];
+	    for(i=0;i<n;i++){
+	        arr[i]=input.nextInt();
+	    }
+	    k=input.nextInt();
+	    for(i=0;i<n;i++){
+	        if(arr[i]==k){
+	            ind=i;
+	            System.out.println("key found");
+	    }
+	         else{
+	        	System.out.println("key not found");
+             }
+      }
+}
