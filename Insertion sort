@@ -2,8 +2,8 @@
 #include <stdio.h>
 int main()
 {
-    int n, i, j, temp;
-    int arr[64];
+    int n, i, j, temp,arr[10000];
+    
  
     printf("Enter number of elements:");
     scanf("%d", &n);
