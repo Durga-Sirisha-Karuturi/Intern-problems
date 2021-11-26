@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int n,i,arr[],k,flag=0,j,count=0;
+	    Scanner input=new Scanner(System.in);
+	    n=input.nextInt();
+	    arr=new int[n];
+	    for(i=0;i<n;i++){
+	        arr[i]=input.nextInt();
+	    }
+	    for(i=0;i<n-1;i++){
+                for(j=i+1;j<n-1;j++){
+	            if(arr[i]==arr[i+1]){
+	                flag=1;
+                    }
+	        }
+	    }
+	    if(flag==1){
+	        	System.out.println("duplicates");
+	    }
+	    else{
+	        	System.out.println("no duplicates");
+	    }
+     }
+  }
